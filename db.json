@@ -1,0 +1,16 @@
+{
+  "products": [
+    {
+      "id": "ypsL7ne",
+      "name": "Product A",
+      "price": 200,
+      "desc": "mo ta san pham A"
+    },
+    {
+      "id": "JnaYvG6",
+      "name": "Product B",
+      "price": 2000,
+      "desc": "mo ta san pham  n"
+    }
+  ]
+}

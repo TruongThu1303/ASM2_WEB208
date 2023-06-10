@@ -1,0 +1,37 @@
+<div class="container">
+ <form class="row g-3 needs-validation" novalidate  [formGroup]="productForm" (ngSubmit)="onHandleSubmit()">
+       
+    <div class="col-md-4">
+        <div class="input-group form-outline">
+        
+          <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required formControlName ="name"/>
+          <label for="validationCustomUsername" class="form-label">Name</label>
+          <div class="invalid-feedback">Please choose a name.</div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-outline">
+          <input type="number" class="form-control" id="validationCustom03" required formControlName ="price"/>
+          <label for="validationCustom03" class="form-label" >price</label>
+          <div class="invalid-feedback">Please provide a valid Price</div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-outline">
+          <input type="text" class="form-control" id="validationCustom05" required formControlName="desc"/>
+          <label for="validationCustom05" class="form-label" >desc</label>
+          <div class="invalid-feedback">Please provide a valid decs.</div>
+        </div>
+      </div>
+      <!-- <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required />
+          <label class="form-check-label" for="invalidCheck">Agree to terms and conditions</label>
+          <div class="invalid-feedback">You must agree before submitting.</div>
+        </div>
+      </div> -->
+      <div class="col-12">
+        <button class="btn btn-primary" type="submit">Submit form</button>
+      </div>
+ </form>
+</div>
